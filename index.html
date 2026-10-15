@@ -100,29 +100,6 @@
             background-color: #e6f2ff;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .info-box {
-            background-color: #eef6ff;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-        }
-
-        ul {
-            padding-left: 20px;
-            margin: 10px 0;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -137,7 +114,7 @@
 
     <header>
         <h1>📈 富邦 006208 定期定額資產對照總表</h1>
-        <p class="subtitle">後端架構師專屬・嚴格複利驗證版</p>
+        <p class="subtitle">後端架構師專屬・1至5年完整展開版</p>
     </header>
 
     <!-- 試算表格卡片 -->
@@ -159,155 +136,48 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- 1,000 元 -->
-                    <tr>
-                        <td rowspan="3"><strong>1,000 元</strong></td>
-                        <td>1 年</td>
-                        <td>12,000 元</td>
-                        <td>94 元</td>
-                        <td>450 元</td>
-                        <td>12,450 元</td>
-                        <td class="highlight-diff">+356 元</td>
-                    </tr>
-                    <tr>
-                        <td>3 年</td>
-                        <td>36,000 元</td>
-                        <td>907 元</td>
-                        <td>4,536 元</td>
-                        <td>40,536 元</td>
-                        <td class="highlight-diff">+3,629 元</td>
-                    </tr>
-                    <tr>
-                        <td>5 年</td>
-                        <td>60,000 元</td>
-                        <td>2,578 元</td>
-                        <td>13,477 元</td>
-                        <td>73,477 元</td>
-                        <td class="highlight-diff">+10,899 元</td>
-                    </tr>
+                    <!-- 1,000 元 (1~5年) -->
+                    <tr><td rowspan="5"><strong>1,000 元</strong></td><td>1 年</td><td>12,000 元</td><td>94 元</td><td>450 元</td><td>12,450 元</td><td class="highlight-diff">+356 元</td></tr>
+                    <tr><td>2 年</td><td>24,000 元</td><td>395 元</td><td>1,933 元</td><td>25,933 元</td><td class="highlight-diff">+1,538 元</td></tr>
+                    <tr><td>3 年</td><td>36,000 元</td><td>907 元</td><td>4,536 元</td><td>40,536 元</td><td class="highlight-diff">+3,629 元</td></tr>
+                    <tr><td>4 年</td><td>48,000 元</td><td>1,633 元</td><td>8,350 元</td><td>56,350 元</td><td class="highlight-diff">+6,717 元</td></tr>
+                    <tr><td>5 年</td><td>60,000 元</td><td>2,578 元</td><td>13,477 元</td><td>73,477 元</td><td class="highlight-diff">+10,899 元</td></tr>
 
-                    <!-- 2,000 元 -->
-                    <tr>
-                        <td rowspan="3"><strong>2,000 元</strong></td>
-                        <td>1 年</td>
-                        <td>24,000 元</td>
-                        <td>188 元</td>
-                        <td>900 元</td>
-                        <td>24,900 元</td>
-                        <td class="highlight-diff">+712 元</td>
-                    </tr>
-                    <tr>
-                        <td>3 年</td>
-                        <td>72,000 元</td>
-                        <td>1,814 元</td>
-                        <td>9,071 元</td>
-                        <td>81,071 元</td>
-                        <td class="highlight-diff">+7,257 元</td>
-                    </tr>
-                    <tr>
-                        <td>5 年</td>
-                        <td>120,000 元</td>
-                        <td>5,155 元</td>
-                        <td>26,954 元</td>
-                        <td>146,954 元</td>
-                        <td class="highlight-diff">+21,799 元</td>
-                    </tr>
+                    <!-- 2,000 元 (1~5年) -->
+                    <tr><td rowspan="5"><strong>2,000 元</strong></td><td>1 年</td><td>24,000 元</td><td>188 元</td><td>900 元</td><td>24,900 元</td><td class="highlight-diff">+712 元</td></tr>
+                    <tr><td>2 年</td><td>48,000 元</td><td>790 元</td><td>3,866 元</td><td>51,866 元</td><td class="highlight-diff">+3,076 元</td></tr>
+                    <tr><td>3 年</td><td>72,000 元</td><td>1,814 元</td><td>9,071 元</td><td>81,071 元</td><td class="highlight-diff">+7,257 元</td></tr>
+                    <tr><td>4 年</td><td>96,000 元</td><td>3,267 元</td><td>16,700 元</td><td>112,700 元</td><td class="highlight-diff">+13,433 元</td></tr>
+                    <tr><td>5 年</td><td>120,000 元</td><td>5,155 元</td><td>26,954 元</td><td>146,954 元</td><td class="highlight-diff">+21,799 元</td></tr>
 
-                    <!-- 5,000 元 -->
-                    <tr>
-                        <td rowspan="3"><strong>5,000 元</strong></td>
-                        <td>1 年</td>
-                        <td>60,000 元</td>
-                        <td>470 元</td>
-                        <td>2,250 元</td>
-                        <td>62,250 元</td>
-                        <td class="highlight-diff">+1,780 元</td>
-                    </tr>
-                    <tr>
-                        <td>3 年</td>
-                        <td>180,000 元</td>
-                        <td>4,535 元</td>
-                        <td>22,678 元</td>
-                        <td>202,678 元</td>
-                        <td class="highlight-diff">+18,143 元</td>
-                    </tr>
-                    <tr>
-                        <td>5 年</td>
-                        <td>300,000 元</td>
-                        <td>12,888 元</td>
-                        <td>67,384 元</td>
-                        <td>367,384 元</td>
-                        <td class="highlight-diff">+54,496 元</td>
-                    </tr>
+                    <!-- 5,000 元 (1~5年) -->
+                    <tr><td rowspan="5"><strong>5,000 元</strong></td><td>1 年</td><td>60,000 元</td><td>470 元</td><td>2,250 元</td><td>62,250 元</td><td class="highlight-diff">+1,780 元</td></tr>
+                    <tr><td>2 年</td><td>120,000 元</td><td>1,975 元</td><td>9,666 元</td><td>129,666 元</td><td class="highlight-diff">+7,691 元</td></tr>
+                    <tr><td>3 年</td><td>180,000 元</td><td>4,535 元</td><td>22,678 元</td><td>202,678 元</td><td class="highlight-diff">+18,143 元</td></tr>
+                    <tr><td>4 年</td><td>240,000 元</td><td>8,166 元</td><td>41,750 元</td><td>281,750 元</td><td class="highlight-diff">+33,584 元</td></tr>
+                    <tr><td>5 年</td><td>300,000 元</td><td>12,888 元</td><td>67,384 元</td><td>367,384 元</td><td class="highlight-diff">+54,496 元</td></tr>
 
-                    <!-- 10,000 元 -->
-                    <tr class="highlight-fee">
-                        <td rowspan="3"><strong>10,000 元</strong><br><small style="color:#0066cc;">(手續費1元上限)</small></td>
-                        <td>1 年</td>
-                        <td>120,000 元</td>
-                        <td>939 元</td>
-                        <td>4,499 元</td>
-                        <td>124,499 元</td>
-                        <td class="highlight-diff">+3,560 元</td>
-                    </tr>
-                    <tr class="highlight-fee">
-                        <td>3 年</td>
-                        <td>360,000 元</td>
-                        <td>9,070 元</td>
-                        <td>45,356 元</td>
-                        <td>405,356 元</td>
-                        <td class="highlight-diff">+36,286 元</td>
-                    </tr>
-                    <tr class="highlight-fee">
-                        <td>5 年</td>
-                        <td>600,000 元</td>
-                        <td>25,776 元</td>
-                        <td>134,769 元</td>
-                        <td>734,769 元</td>
-                        <td class="highlight-diff">+108,993 元</td>
-                    </tr>
+                    <!-- 10,000 元 (1~5年) -->
+                    <tr class="highlight-fee"><td rowspan="5"><strong>10,000 元</strong><br><small style="color:#0066cc;">(手續費1元)</small></td><td>1 年</td><td>120,000 元</td><td>939 元</td><td>4,499 元</td><td>124,499 元</td><td class="highlight-diff">+3,560 元</td></tr>
+                    <tr class="highlight-fee"><td>2 年</td><td>240,000 元</td><td>3,951 元</td><td>19,332 元</td><td>259,332 元</td><td class="highlight-diff">+15,381 元</td></tr>
+                    <tr class="highlight-fee"><td>3 年</td><td>360,000 元</td><td>9,070 元</td><td>45,356 元</td><td>405,356 元</td><td class="highlight-diff">+36,286 元</td></tr>
+                    <tr class="highlight-fee"><td>4 年</td><td>480,000 元</td><td>16,333 元</td><td>83,499 元</td><td>563,499 元</td><td class="highlight-diff">+67,166 元</td></tr>
+                    <tr class="highlight-fee"><td>5 年</td><td>600,000 元</td><td>25,776 元</td><td>134,769 元</td><td>734,769 元</td><td class="highlight-diff">+108,993 元</td></tr>
 
-                    <!-- 20,000 元 -->
-                    <tr>
-                        <td rowspan="4"><strong>20,000 元</strong></td>
-                        <td>1 年</td>
-                        <td>240,000 元</td>
-                        <td>1,879 元</td>
-                        <td>8,999 元</td>
-                        <td>248,999 元</td>
-                        <td class="highlight-diff">+7,120 元</td>
-                    </tr>
-                    <tr>
-                        <td>3 年</td>
-                        <td>720,000 元</td>
-                        <td>18,140 元</td>
-                        <td>90,711 元</td>
-                        <td>810,711 元</td>
-                        <td class="highlight-diff">+72,571 元</td>
-                    </tr>
-                    <tr>
-                        <td>5 年</td>
-                        <td>1,200,000 元</td>
-                        <td>51,552 元</td>
-                        <td>269,537 元</td>
-                        <td>1,469,537 元</td>
-                        <td class="highlight-diff">+217,985 元</td>
-                    </tr>
-                    <tr>
-                        <td>10 年</td>
-                        <td>2,400,000 元</td>
-                        <td>214,055 元</td>
-                        <td>1,258,921 元</td>
-                        <td>3,658,921 元</td>
-                        <td class="highlight-diff">+1,044,866 元</td>
-                    </tr>
+                    <!-- 20,000 元 (1~5年 及 10年) -->
+                    <tr><td rowspan="6"><strong>20,000 元</strong></td><td>1 年</td><td>240,000 元</td><td>1,879 元</td><td>8,999 元</td><td>248,999 元</td><td class="highlight-diff">+7,120 元</td></tr>
+                    <tr><td>2 年</td><td>480,000 元</td><td>7,902 元</td><td>38,664 元</td><td>518,664 元</td><td class="highlight-diff">+30,762 元</td></tr>
+                    <tr><td>3 年</td><td>720,000 元</td><td>18,140 元</td><td>90,711 元</td><td>810,711 元</td><td class="highlight-diff">+72,571 元</td></tr>
+                    <tr><td>4 年</td><td>960,000 元</td><td>32,665 元</td><td>166,998 元</td><td>1,126,998 元</td><td class="highlight-diff">+134,333 元</td></tr>
+                    <tr><td>5 年</td><td>1,200,000 元</td><td>51,552 元</td><td>269,537 元</td><td>1,469,537 元</td><td class="highlight-diff">+217,985 元</td></tr>
+                    <tr><td>10 年</td><td>2,400,000 元</td><td>214,055 元</td><td>1,258,921 元</td><td>3,658,921 元</td><td class="highlight-diff">+1,044,866 元</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
     <footer>
-        <p>Backend & Data Verified | 006208 嚴格複利試算總表</p>
+        <p>Backend & Data Verified | 006208 嚴格複利試算總表（1-5年完整展開）</p>
     </footer>
 
 </div>
